@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 //import { Container, Row, Col } from 'react-grid-system';
 //import DisplayGraph from './displayGraph';
 import { nodeStatusType, Vertex } from './Vertex';
 //import update from 'immutability-helper';
 import PriorityQueue from 'js-priority-queue'
-import { Container, Grid, Button, ButtonGroup, Paper } from '@mui/material';
+import { Grid, Button, ButtonGroup} from '@mui/material';
 import ReplayIcon from '@mui/icons-material/Replay';
 import SendIcon from '@mui/icons-material/Send';
 //import NavigationIcon from '@mui/icons-material/Psychology';
@@ -231,7 +231,8 @@ class PathFinder extends React.Component {
     while (queue.length > 0 && !found) {
       //console.log('here')
 
-      var [node, n] = queue.dequeue();
+      // var [node, n] = queue.dequeue();
+      var node = queue.dequeue()[0];
 
       var neighbours = this.getNeighbours(node)
 
