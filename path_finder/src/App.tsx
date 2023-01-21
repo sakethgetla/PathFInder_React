@@ -21,12 +21,12 @@ function App() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Saketh Getla
             </Typography>
-            <Button color="inherit"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "https://sakethgetla.github.io"
-              }} >
-            games</Button>
+            {/* <Button color="inherit" */}
+            {/*   onClick={(e) => { */}
+            {/*     e.preventDefault(); */}
+            {/*     window.location.href = "https://sakethgetla.github.io" */}
+            {/*   }} > */}
+            {/* games</Button> */}
             {/* <Button color="inherit">Login</Button> */}
           </Toolbar>
         </AppBar>
